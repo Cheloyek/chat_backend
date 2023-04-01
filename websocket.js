@@ -2,7 +2,7 @@ const ws = require('ws')
 
 //создаем ws cервер
 const webSocketServer = new ws.Server({
-    port: 3000,
+    port: process.env.PORT || 3000,
     //в случае успешного запуска
 }, () => console.log('Server started on 3000 port'))
 
