@@ -23,6 +23,7 @@
     "ws": "^8.13.0"
   },
   "scripts": {
+    "build": "tsc",
     "start": "nodemon websocket.js",
     "start-dev": "nodemon --inspect dist/app.js",
     "watch-dev": "tsc -w"
