@@ -28,6 +28,7 @@ webSocketServer.on('connection', function connection(ws) {
     })
 })
 
+
 const message = {
     event: 'message/connection',
     id: 1,
@@ -48,13 +49,13 @@ const broadcastMessage = (message) => {
 //
 // const app = express();
 // const server = http.createServer(app);
-// const io = socketio(server)
+// const socket = socketio(server)
 //
 // app.get('/', (req, res) => {
 //     res.send('<h1>Hello it is server</h1>');
 // });
 //
-// io.on('connection', (socket) => {
+// socket.on('connection', (connection) => {
 //     console.log("user connected")
 // })
 //
